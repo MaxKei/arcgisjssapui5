@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>JavaScript Map Application</title>
+        <style>
+          #mapContainer {
+              position: absolute;
+              height: 100%;
+              width: 100%;
+            }
+        </style>
+        <script
+            src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+            id="sap-ui-bootstrap"
+            data-sap-ui-libs="sap.m"
+            data-sap-ui-theme="sap_bluecrystal"
+            data-sap-ui-bindingSyntax="complex"
+            data-sap-ui-compatVersion="edge"
+            data-sap-ui-preload="async"
+            data-sap-ui-resourceroots='{
+              "arcgisjssapui5": "./"
+            }'>
+        </script>
+        <script>
+          sap.ui.getCore().attachInit(function () {
+            sap.ui.xmlview({
+              viewName: "arcgisjssapui5.view.App"
+            }).placeAt("content");
+          });
+        </script>
+   </head>
+   <body class="sapUiBody" id="content">
+   </body>
+</html>
